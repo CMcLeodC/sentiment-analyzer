@@ -1,4 +1,21 @@
+# Virtual environment
 venv/
+
+# Python cache
 __pycache__/
+*.py[cod]
+
+# Model artifacts
 *.pkl
 *.csv
+
+# Dataset archive
+aclImdb_v1.tar.gz
+
+# Jupyter notebooks (if added later)
+*.ipynb
+
+# VSCode and editor configs (optional)
+.vscode/
+*.swp
+.DS_Store
