@@ -12,6 +12,9 @@ __pycache__/
 # Dataset archive
 aclImdb_v1.tar.gz
 
+# Common IDE folders
+.idea/
+
 # Jupyter notebooks (if added later)
 *.ipynb
 
