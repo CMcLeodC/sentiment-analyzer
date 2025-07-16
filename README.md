@@ -18,9 +18,11 @@ A lightweight web app that judges the **sentiment** (positive / negative) of
 > Paste a review, hit **Check Sentiment**, get instant feedback.
 
 ![Screenshot](screenshots/demo.png)
+ 
+`▶️ https://sentiment-analyzer-og56.onrender.com`
 
-*If the deployed link is available, add it here:*  
-`▶️ https://sentiment-analyzer-demo.xyz`
+Note: The deployed model was trained locally on a sample of the IMDb dataset.
+For full reproducibility, follow the setup steps and run the training script.
 
 ---
 

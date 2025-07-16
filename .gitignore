@@ -6,7 +6,7 @@ __pycache__/
 *.py[cod]
 
 # Model artifacts
-*.pkl
+# *.pkl
 *.csv
 
 # Dataset archive
