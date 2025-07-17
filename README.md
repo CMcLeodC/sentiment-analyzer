@@ -19,10 +19,12 @@ A lightweight web app that judges the **sentiment** (positive / negative) of
 
 ![Screenshot](screenshots/demo.png)
  
-`▶️ https://sentiment-analyzer-og56.onrender.com`
+`▶️ https://connors-sentiment-analyser.netlify.app`
 
 Note: The deployed model was trained locally on a sample of the IMDb dataset.
 For full reproducibility, follow the setup steps and run the training script.
+
+First request may take 10–30s due to cold start (Render free tier)
 
 ---
 
