@@ -1,4 +1,5 @@
 import pandas as pd
+import os
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
@@ -28,7 +29,11 @@ model.fit(X_train_vec, y_train)
 y_pred = model.predict(X_test_vec)
 print(classification_report(y_test, y_pred))
 
+# Define save path
+MODEL_DIR = os.path.join("backend", "models")
+os.makedirs(MODEL_DIR, exist_ok=True)
+
 # Save model + vectorizer
-joblib.dump(model, "sentiment_model.pkl")
-joblib.dump(vectorizer, "tfidf_vectorizer.pkl")
+joblib.dump(model, os.path.join(MODEL_DIR, "sentiment_model.pkl"))
+joblib.dump(vectorizer, os.path.join(MODEL_DIR, "tfidf_vectorizer.pkl"))
 print("Model and vectorizer saved ✅")

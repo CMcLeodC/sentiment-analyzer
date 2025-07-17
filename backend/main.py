@@ -7,9 +7,13 @@ from fastapi.middleware.cors import CORSMiddleware
 
 
 # Load model + vectorizer at startup
-BASE_DIR = os.path.dirname(__file__)
-model = joblib.load(os.path.join(BASE_DIR, "sentiment_model.pkl"))
-vectorizer = joblib.load(os.path.join(BASE_DIR, "tfidf_vectorizer.pkl"))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "models", "sentiment_model.pkl")
+VECTORIZER_PATH = os.path.join(BASE_DIR, "models", "tfidf_vectorizer.pkl")
+
+model = joblib.load(MODEL_PATH)
+vectorizer = joblib.load(VECTORIZER_PATH)
+
 
 app = FastAPI()
 
