@@ -18,7 +18,8 @@ A lightweight web app that judges the **sentiment** (positive / negative) of
 > Paste a review, hit **Check Sentiment**, get instant feedback.
 
 ![Screenshot](screenshots/demo.png)
- 
+
+ Check out the live app here: [Sentiment Analyzer on Netlify](https://connors-sentiment-analyser.netlify.app)
 `▶️ https://connors-sentiment-analyser.netlify.app`
 
 Note: The deployed model was trained locally on a sample of the IMDb dataset.
